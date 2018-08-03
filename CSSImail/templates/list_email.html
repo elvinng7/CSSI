@@ -1,0 +1,5 @@
+list email pagesss
+
+{% for email in emails %}
+  <li><a href="/viewemail?subject={{email.subject}}&sender={{email.sender}}&content={{email.content}}">{{email.subject}}</a></li>
+{% endfor %}

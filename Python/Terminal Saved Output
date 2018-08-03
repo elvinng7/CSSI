@@ -1,0 +1,139 @@
+Last login: Tue Jul 24 06:52:29 on ttys000
+MacBook-Air:~ demouser$ ls
+Applications	Downloads	Music		elvin_ng
+Desktop		Library		Pictures	my_table
+Documents	Movies		Public		test_directory
+MacBook-Air:~ demouser$ cd desktop
+MacBook-Air:desktop demouser$ ls
+CSSI			TP			cssi-labs-master
+MacBook-Air:desktop demouser$ cd cssi
+MacBook-Air:cssi demouser$ ls
+Adventure	FillIt		Profile		clicky		hello-world
+CSSImail	HTML		Python		googleminus	madlibs
+Facebook	Javascript	Quiz		guestbook	quilty
+MacBook-Air:cssi demouser$ cd Facebook/
+MacBook-Air:Facebook demouser$ ls
+app.yaml	main.py		main.pyc	templates
+MacBook-Air:Facebook demouser$ dev_appserver.py app.yaml 
+INFO     2018-07-27 13:23:10,332 devappserver2.py:120] Skipping SDK update check.
+INFO     2018-07-27 13:23:10,619 api_server.py:274] Starting API server at: http://localhost:50747
+INFO     2018-07-27 13:23:10,781 dispatcher.py:270] Starting module "default" running at: http://localhost:8080
+INFO     2018-07-27 13:23:10,792 admin_server.py:152] Starting admin server at: http://localhost:8000
+ERROR    2018-07-27 13:23:16,546 webapp2.py:1552] 'patch' is undefined
+Traceback (most recent call last):
+  File "/Users/demouser/Downloads/google-cloud-sdk/platform/google_appengine/lib/webapp2-2.5.2/webapp2.py", line 1535, in __call__
+    rv = self.handle_exception(request, response, e)
+  File "/Users/demouser/Downloads/google-cloud-sdk/platform/google_appengine/lib/webapp2-2.5.2/webapp2.py", line 1529, in __call__
+    rv = self.router.dispatch(request, response)
+  File "/Users/demouser/Downloads/google-cloud-sdk/platform/google_appengine/lib/webapp2-2.5.2/webapp2.py", line 1278, in default_dispatcher
+    return route.handler_adapter(request, response)
+  File "/Users/demouser/Downloads/google-cloud-sdk/platform/google_appengine/lib/webapp2-2.5.2/webapp2.py", line 1102, in __call__
+    return handler.dispatch()
+  File "/Users/demouser/Downloads/google-cloud-sdk/platform/google_appengine/lib/webapp2-2.5.2/webapp2.py", line 572, in dispatch
+    return self.handle_exception(e, self.app.debug)
+  File "/Users/demouser/Downloads/google-cloud-sdk/platform/google_appengine/lib/webapp2-2.5.2/webapp2.py", line 570, in dispatch
+    return method(*args, **kwargs)
+  File "/Users/demouser/Desktop/CSSI/Facebook/main.py", line 23, in get
+    self.response.write(template.render(templateVars))
+  File "/Users/demouser/Downloads/google-cloud-sdk/platform/google_appengine/lib/jinja2-2.6/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/demouser/Desktop/CSSI/Facebook/templates/home.html", line 35, in top-level template code
+    <div class="message" style="border-color: {{patch.inner_color}}; background-color: {{patch.outer_color}};"></div>
+UndefinedError: 'patch' is undefined
+INFO     2018-07-27 13:23:16,558 module.py:846] default: "GET / HTTP/1.1" 500 2253
+INFO     2018-07-27 13:54:53,958 module.py:414] [default] Detected file changes:
+  /Users/demouser/Desktop/CSSI/Facebook/templates/home.html
+INFO     2018-07-27 13:54:58,568 module.py:846] default: "GET / HTTP/1.1" 200 664
+INFO     2018-07-27 13:54:59,506 module.py:846] default: "GET / HTTP/1.1" 200 664
+INFO     2018-07-27 13:55:10,090 module.py:846] default: "POST / HTTP/1.1" 200 -
+INFO     2018-07-27 13:55:11,752 module.py:846] default: "GET / HTTP/1.1" 200 712
+INFO     2018-07-27 13:56:11,315 module.py:414] [default] Detected file changes:
+  /Users/demouser/Desktop/CSSI/Facebook/templates/home.html
+INFO     2018-07-27 13:56:13,145 module.py:846] default: "GET / HTTP/1.1" 200 698
+INFO     2018-07-27 13:56:13,804 module.py:846] default: "GET / HTTP/1.1" 200 698
+INFO     2018-07-27 13:56:15,206 module.py:846] default: "GET / HTTP/1.1" 200 698
+INFO     2018-07-27 13:56:17,359 module.py:846] default: "POST / HTTP/1.1" 200 -
+INFO     2018-07-27 13:56:21,053 module.py:846] default: "POST / HTTP/1.1" 200 -
+INFO     2018-07-27 13:56:22,725 module.py:846] default: "GET / HTTP/1.1" 200 780
+INFO     2018-07-27 13:56:38,239 module.py:846] default: "POST / HTTP/1.1" 200 -
+INFO     2018-07-27 13:56:40,543 module.py:846] default: "POST / HTTP/1.1" 200 -
+INFO     2018-07-27 13:56:44,804 module.py:846] default: "POST / HTTP/1.1" 200 -
+INFO     2018-07-27 13:56:46,391 module.py:846] default: "GET / HTTP/1.1" 200 903
+INFO     2018-07-27 13:57:22,632 module.py:414] [default] Detected file changes:
+  /Users/demouser/Desktop/CSSI/Facebook/templates/home.html
+^CINFO     2018-07-27 21:53:34,396 shutdown.py:50] Shutting down.
+INFO     2018-07-27 21:53:34,397 stub_util.py:357] Applying all pending transactions and saving the datastore
+INFO     2018-07-27 21:53:34,397 stub_util.py:360] Saving search indexes
+MacBook-Air:Facebook demouser$ cd
+MacBook-Air:~ demouser$ git clone https://github.com/elvinng7/dreamdestination.git
+Cloning into 'dreamdestination'...
+warning: You appear to have cloned an empty repository.
+MacBook-Air:~ demouser$ echo "# dreamdestination" >> README.md
+MacBook-Air:~ demouser$ git init
+Initialized empty Git repository in /Users/demouser/.git/
+MacBook-Air:~ demouser$ ls
+Applications		Movies			dreamdestination
+Desktop			Music			elvin_ng
+Documents		Pictures		my_table
+Downloads		Public			test_directory
+Library			README.md
+MacBook-Air:~ demouser$ cd desktop
+MacBook-Air:desktop demouser$ ls
+CSSI			TP			cssi-labs-master
+MacBook-Air:desktop demouser$ cd cssi
+MacBook-Air:cssi demouser$ git init
+Initialized empty Git repository in /Users/demouser/Desktop/CSSI/.git/
+MacBook-Air:cssi demouser$ cd
+MacBook-Air:~ demouser$ cd Desktop
+MacBook-Air:Desktop demouser$ git clone https://github.com/elvinng7/dreamdestination.git
+Cloning into 'dreamdestination'...
+warning: You appear to have cloned an empty repository.
+MacBook-Air:Desktop demouser$ echo "# dreamdestination" >> README.md
+MacBook-Air:Desktop demouser$ git init
+Initialized empty Git repository in /Users/demouser/Desktop/.git/
+MacBook-Air:Desktop demouser$ git add README.md
+MacBook-Air:Desktop demouser$ git commit -m "first commit"
+[master (root-commit) 8df39fb] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+MacBook-Air:Desktop demouser$ git remote add origin https://github.com/elvinng7/dreamdestination.git
+MacBook-Air:Desktop demouser$ git push -u origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 232 bytes | 232.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/elvinng7/dreamdestination.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+MacBook-Air:Desktop demouser$ git clone https://github.com/elvinng7/dreamdestination.git
+fatal: destination path 'dreamdestination' already exists and is not an empty directory.
+MacBook-Air:Desktop demouser$ git pull
+Already up to date.
+MacBook-Air:Desktop demouser$ cd desktop
+-bash: cd: desktop: No such file or directory
+MacBook-Air:Desktop demouser$ ls
+CSSI			TP			dreamdestination
+README.md		cssi-labs-master
+MacBook-Air:Desktop demouser$ cd dreamdestination/
+MacBook-Air:dreamdestination demouser$ git pull
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/elvinng7/dreamdestination
+ * [new branch]      master     -> origin/master
+MacBook-Air:dreamdestination demouser$ git push 
+Everything up-to-date
+MacBook-Air:dreamdestination demouser$ git commit
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+	modified:   README.md
+
+Untracked files:
+	.gitignore
+
+no changes added to commit
+MacBook-Air:dreamdestination demouser$ git add .gitignore 
+MacBook-Air:dreamdestination demouser$ git commit "add gitignore"
+error: pathspec 'add gitignore' did not match any file(s) known to git.
+MacBook-Air:dreamdestination demouser$ 

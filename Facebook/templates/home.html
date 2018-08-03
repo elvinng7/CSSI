@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+<style>
+
+body {
+background-color: lightblue;
+}
+
+.message{
+      background-color: lightgrey;
+      width: 300px;
+      border: 25px solid green;
+      padding: 25px;
+      margin: 1px;
+}
+
+</style>
+</head>
+
+<h1>Hello! Welcome to the CSSI forum!</h1>
+<body>
+
+<form action="/" method="post">
+  <div id="whitebackground">
+  <div id="messagebox">
+    <textarea rows ="10" cols="100"> Write your message here </textarea> <br>
+    <button>Post</button>
+    <br>
+    <input class= "message" name="content" value="content">
+  </div>
+  </div>
+</form>
+  {% for message in messages %}
+
+  <div class="message">print {{content}}</div>
+
+  {% endfor %}
+
+
+<a href="/home">Add a patch</a>
+
+</div>
+</body>

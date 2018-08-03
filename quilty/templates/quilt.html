@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<title>Quilty</title>
+<head>
+<style>
+
+
+  .quilt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .patch{
+    padding: 20px;
+    border: 20px solid darkgrey;
+    background-color: lightgrey;
+    margin: 1px;
+  }
+</style>
+
+<div class="quilt">
+</head>
+{% for patch in patches %}
+
+<div class="patch" style="border-color: {{patch.inner_color}}; background-color: {{patch.outer_color}};"></div>
+
+{% endfor %}
+</div>
+<a href="/add">Add a patch</a>
+
+<div class="patch" style="border-color: red; background-color: violet;"></div>
+<div class="patch" style="border-color: blue; background-color: green;"></div>
+<div class="patch" style="border-color: yellow; background-color: magenta;"></div>
+<div class="patch" style="border-color: blue; background-color: black;"></div>
